@@ -1,0 +1,34 @@
+.title{
+    background-color: black;
+}
+
+.title h1, p{
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.generator img{
+    position: relative;
+    display: none;
+    opacity: .4;
+    width: 100%;
+    height:750px;
+}
+
+.generator form{
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.generator span{
+    color: black;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 75px;
+    margin-right: 15px;
+    font-family: 'Luckiest Guy', cursive;
+    
+}

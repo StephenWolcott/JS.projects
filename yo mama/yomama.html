@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yo Mamma</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Yo MaMa JoKeZ</h1>
+                    <p>PrEsS dA bUtToN fOr ThE hArDeSt Yo MaMa JoKeZ oN tHe WhOlE iNtErNeT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="generator">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form onsubmit="event.preventDefault(); yomamaGenerator(); showImage();">
+                    <input value="generate a joke" type="submit" >
+                    </form>
+                    <span id="display"></span>
+                    <img id="loadingImage" src="images/slavoj.jpg"/>
+                    <script>
+                        function yomamaGenerator(){
+                            var display = document.getElementById("display");
+                    
+                            var jokes = ['is like cinema, which is the ultimate pervert art. It does not give you what you desire - it tells you how to desire.','feels free because she lacks the very language to articulate her unfreedom.', 'is like love: she feels like a great misfortune, a monstrous parasite, a permanent state of emergency that ruins all small pleasures.', 'fails the true ethical test, which is not only the readiness to save the victims, but also - even more, perhaps - the ruthless dedication to annihilating those who made them victims.',];
+                    
+                            var idx1 = Math.round(Math.random() * 3);
+                    
+                            console.log(idx1);
+                    
+                            display.innerHTML = "Yo MAMA " + jokes[idx1] + ".";
+                        }
+                        function showImage(){
+                            $("#loadingImage").show();
+                            
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
